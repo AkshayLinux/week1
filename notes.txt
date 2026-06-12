@@ -1,0 +1,2 @@
+git remote add origin https://github.com/AkshayLi/week1
+git branch -d "branch-name"
