@@ -1,8 +1,11 @@
 connect to remote origin
 git remote add origin https://github.com/AkshayLi/week1
 
-push to exisiting branch
+delete branch
 git branch -d "branch-name"
 
 publish branch
 git push -u origin feat/day2tasks
+
+publish to existing branch
+git push origin feat/day2tasks
