@@ -9,3 +9,12 @@ git push -u origin feat/day2tasks
 
 publish to existing branch
 git push origin feat/day2tasks
+
+switch branches
+git switch feat/day1tasks
+
+stash changes
+git stash
+
+restore stashed changes
+git stash pop
