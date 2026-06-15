@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Images</title>
+    </head>
+    <body>
+        <img srcset="
+            https://picsum.photos/400/300?random=1 400w, 
+            https://picsum.photos/800/200?random=2 800w,
+            https://picsum.photos/1200/100?random=3 1200w
+        "
+        
+        loading="eager"
+        >
+        <p>srcset and sizes attributes</p>
+        <img srcset="
+            https://picsum.photos/400/300?random=1 400w, 
+            https://picsum.photos/400/100?random=3 400w,
+            https://picsum.photos/800/200?random=2 800w,
+            https://picsum.photos/800/150?random=3 800w,
+            https://picsum.photos/1200/100?random=3 1200w
+        "
+        sizes="
+            (max-width: 600px) 100vw,
+            (max-width: 1200px) 50vw, 33vw
+        "
+        loading="lazy"
+        >
+        <p>picture tag</p>
+
+        <picture>
+            <source media="(min-width:800px)" srcset="https://picsum.photos/1980/1080?random=3">
+            <source media="(min-width:350px)" srcset="https://picsum.photos/500/500?random=3">
+            <source media="(min-width:50px)" srcset="https://picsum.photos/200/200?random=3">
+            <img>
+        </picture>
+    </body>
+</html>
