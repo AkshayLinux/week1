@@ -1,0 +1,19 @@
+task1 login.html
+lighthouse accessibility: 100
+axeDev tools: 0 error
+
+task2 register.html
+lighthouse accessibility: 91
+axeDev tools: 0 error
+
+task3 validation.html
+lighthouse accessibility: 91
+axeDev tools: 0 error
+
+task4 checkout.html (after update same result)
+lighthouse accessibility: 92
+axeDev tools: 0 error
+
+task5 application.html
+lighthouse accessibility: 92
+axeDev tools: 0 error
