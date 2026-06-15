@@ -4,10 +4,20 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Aria demo</title>
+        <style>
+            .skip-link{
+                position: absolute;
+                left: -10000px;
+                overflow: hidden;
+            }
+            .skip-link:focus{
+                position: static;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <a href="#main-content" class="skip-link" style="display: none;">Skip to main content</a>
+            <a href="#main-content" class="skip-link">Skip to main content</a>
         </header>
         <div role="search">
             <label>Search in page</label>
