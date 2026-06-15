@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application Form</title>
+    </head>
+    <body>
+        <header>
+            <h1>Apply for job now</h1>
+        </header>
+        <section>
+            <h2>There are only 3 steps to apply for this job: </h2>
+            <ol>
+                <li aria-current="step">Step 1 - Fill in your Personal Information</li>
+                <li>Step 2 - Your Work Expierience details</li>
+                <li>Step 3 - Upload documents</li>
+            </ol>
+        </section>
+        <form>
+            <fieldset>
+                <legend>Step 1: Personal Information</legend>
+
+                <label for="name">Name: </label>
+                <input id="name" type="text"><br>
+
+                <label for="mail">E Mail: </label>
+                <input id="mail" type="email"><br>
+
+                <label for="phone">Phone: </label>
+                <input id="phone" type="tel"><br>
+
+                <label for="linkedin">LinkedIn profile: </label>
+                <input id="linkedin" type="url"><br>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Step 2: Work Experience</legend>
+
+                <label for="current-role">Current role: </label>
+                <input id="current-role" type="text"><br>
+
+                <label for="current-company">Current company: </label>
+                <input id="current-company" type="text"><br>
+
+                <label for="exp">How many years of expierience?: </label>
+                <input id="exp" type="number"><br>
+
+                <label for="achievements">Your key Achievements: </label><br>
+                <textarea id="achievements" maxlength="500" placeholder="Max 500 characters"></textarea><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Step 3: Documents</legend>
+                
+                <label for="cv">Please upload your CV:</label>
+                <input id="cv" type="file" accept=".pdf,.docx"><br>
+
+                <label for="cover-letter">Upload your cover letter: </label>
+                <input id="cover-letter" type="file"><br>
+
+                <label for="portfolio">Your portfolio URL: </label>
+                <input id="portfolio" type="url"><br>
+            </fieldset>
+        </form>
+    </body>
+</html>
