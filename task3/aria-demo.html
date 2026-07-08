@@ -1,48 +1,60 @@
 <!doctype html>
 <html lang="zxx">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aria demo</title>
-        <style>
-            .skip-link{
-                position: absolute;
-                left: -10000px;
-                overflow: hidden;
-            }
-            .skip-link:focus{
-                position: static;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <a href="#main-content" class="skip-link">Skip to main content</a>
-        </header>
-        <div role="search">
-            <label>Search in page</label>
-            <input type="text" placeholder="Search">
-        </div>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Aria demo</title>
+		<style>
+			.skip-link {
+				position: absolute;
+				left: -10000px;
+				overflow: hidden;
+			}
+			.skip-link:focus {
+				position: static;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<a href="#main-content" class="skip-link">Skip to main content</a>
+		</header>
+		<div role="search">
+			<label>Search in page</label>
+			<input type="text" placeholder="Search" />
+		</div>
 
-        <button aria-label="Close menu">X</button>
+		<button aria-label="Close menu">X</button>
 
-        <input type="checkbox" aria-expanded="false" aria-controls="menu-id">
+		<input type="checkbox" aria-expanded="false" aria-controls="menu-id" />
 
-        <div role="alert" aria-live="polite">
-            <h1>Notification Panel</h1>
-        </div>
-        <main id="main-content">
-            <form>
-                <h1>Registration form</h1>
-                <label>First name: </label>
-                <input type="text" aria-required="true" aria-describedby="If your name is Arjun Arun, Arjun is the first name">
+		<div role="alert" aria-live="polite">
+			<h1>Notification Panel</h1>
+		</div>
+		<main id="main-content">
+			<form>
+				<h1>Registration form</h1>
+				<label>First name: </label>
+				<input
+					type="text"
+					aria-required="true"
+					aria-describedby="If your name is Arjun Arun, Arjun is the first name"
+				/>
 
-                <br><label>Last name: </label>
-                <input type="text" aria-required="true" aria-describedby="If your name is Arjun Arun, Arun is the last name">
+				<br /><label>Last name: </label>
+				<input
+					type="text"
+					aria-required="true"
+					aria-describedby="If your name is Arjun Arun, Arun is the last name"
+				/>
 
-                <br><label>Mobile number: </label>
-                <input type="tel" aria-required="true" aria-describedby="Mobile number is must to complete registration process">
-            </form>
-        </main>
-    </body>
+				<br /><label>Mobile number: </label>
+				<input
+					type="tel"
+					aria-required="true"
+					aria-describedby="Mobile number is must to complete registration process"
+				/>
+			</form>
+		</main>
+	</body>
 </html>
