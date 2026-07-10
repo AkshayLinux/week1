@@ -1,0 +1,20 @@
+connect to remote origin
+git remote add origin https://github.com/AkshayLi/week1
+
+delete branch
+git branch -d "branch-name"
+
+publish branch
+git push -u origin feat/day2tasks
+
+publish to existing branch
+git push origin feat/day2tasks
+
+switch branches
+git switch feat/day1tasks
+
+stash changes
+git stash
+
+restore stashed changes
+git stash pop
