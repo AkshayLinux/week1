@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Checkout payment</title>
+	</head>
+	<body>
+		<header>
+			<h1>Pay & Confirm Booking</h1>
+		</header>
+		<form>
+			<legend>Fields marked * are required</legend>
+			<fieldset>
+				<legend>Delivery Address</legend>
+				<label for="fname">Full name*: </label>
+				<input id="fname" type="text" required /><br />
+
+				<label id="address">Address*: </label><br />
+				<input
+					id="addr1"
+					type="text"
+					placeholder="Address line 1"
+					required
+					aria-labelledby="address"
+				/><br />
+				<input
+					id="addr2"
+					type="text"
+					placeholder="Address line 2"
+					required
+					aria-labelledby="address"
+				/><br />
+
+				<label for="city">City*: </label>
+				<input id="city" type="text" required /><br />
+
+				<label for="post">Post code*: </label>
+				<input id="post" type="text" pattern="[0-9]{6}" required /><br />
+
+				<label for="country">Country*: </label>
+				<input id="country" list="country-names" required />
+				<datalist id="country-names">
+					<option value="Australia"></option>
+					<option value="India"></option>
+					<option value="United States"></option>
+					<option value="United Kingdom"></option>
+					<option value="Japan"></option>
+					<option value="Chine"></option>
+					<option value="Russia"></option>
+					<option value="Europe"></option>
+					<option value="Indonesia"></option>
+					<option value="Nepal"></option>
+					<option value="Sri Lanka"></option>
+					<option value="Brazile"></option>
+					<option value="Germany"></option>
+					<option value="Portugese"></option>
+					<option value="France"></option>
+					<option value="Iceland"></option>
+					<option value="Italy"></option>
+					<option value="Kenya"></option>
+					<option value="Kuwait"></option>
+					<option value="Liberia"></option>
+				</datalist>
+			</fieldset>
+
+			<fieldset>
+				<legend>Payment Details</legend>
+				<label for="card">Card number*: </label>
+				<input
+					id="card"
+					type="text"
+					maxlength="16"
+					pattern="[0-9]{1,}"
+					required
+				/><br />
+
+				<label for="expiry">Card expiry date*: </label>
+				<input id="expiry" type="month" min="2026-06" required /><br />
+
+				<label for="cvv">CVV*: </label>
+				<input
+					id="cvv"
+					type="password"
+					maxlength="4"
+					aria-describedby="3 or 4 digits on the back of your card"
+					required
+				/><br />
+			</fieldset>
+
+			<fieldset>
+				<legend>Order Notes</legend>
+				<label for="notes">Notes for this purchase: </label><br />
+				<textarea id="notes" maxlength="500"></textarea>
+			</fieldset>
+
+			<button type="submit">Checkout</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
+		<title>Register now</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>Register and apply now</h1>
+			</header>
+			<form>
+				<fieldset>
+					<legend>Personal details</legend>
+					<label for="name">Name: </label>
+					<input id="name" type="text" required /><br />
+
+					<label for="email">E-Mail: </label>
+					<input id="email" type="email" maxlength="50" required /><br />
+
+					<label for="phone">Phone: </label>
+					<input id="phone" type="tel" minlength="10" required /><br />
+
+					<label for="dob">Date of birth: </label>
+					<input id="dob" type="date" /><br />
+
+					<label for="pin">PIN code: </label>
+					<input id="pin" type="number" /><br />
+
+					<label for="portfolio">Portfolio url: </label>
+					<input id="portfolio" type="url" /><br />
+
+					<label for="resume">Upload your resume: </label>
+					<input id="resume" type="file" />
+				</fieldset>
+
+				<fieldset>
+					<legend>Account</legend>
+					<label for="username"
+						>Username(only include letters, digits and underscore):</label
+					>
+					<input
+						id="username"
+						type="text"
+						pattern="[A-Za-z0-9_]{3,20}"
+						required
+					/><br />
+					<label for="password">Password: </label>
+					<input id="password" type="password" required /><br />
+					<label for="confirm-password">Confirm password</label>
+					<input id="confirm-password" type="password" required /><br />
+				</fieldset>
+
+				<fieldset>
+					<legend>Preferences</legend>
+					<p>Select notification settings:</p>
+					<input id="critical" name="notification" type="radio" />
+					<label for="critical">Critical notifcations only</label><br />
+					<input id="casual" name="notification" type="radio" />
+					<label for="casual">Critical and new vacancy updates</label><br />
+
+					<label for="skill">Set your skill level</label>
+					<input id="skill" type="range" min="1" max="10" /><br />
+
+					<label for="color">Set profile color: </label>
+					<input id="color" type="color" /><br />
+
+					<label for="appointment-time">When can we call you today?</label>
+					<input id="appointment-time" type="time" /><br />
+
+					<label for="schedule-date-time">Schedule your appointment: </label>
+					<input id="schedule-date-time" type="datetime-local" /><br />
+
+					<label for="starting-month">When can you join us?(if selected)</label>
+					<input id="starting-month" type="month" /><br />
+
+					<label for="starting-week"
+						>Which week you like to join?(if selected)</label
+					>
+					<input id="starting-week" type="week" /><br />
+
+					<label for="accomodation">Do you want company accomodation? </label>
+					<input id="accomodation" type="checkbox" /><br />
+
+					<label for="role">Select your job title</label>
+					<input id="role" list="roles" />
+					<datalist id="roles">
+						<option value="Java developer"></option>
+						<option value="Python developer"></option>
+						<option value="SQL maintainer"></option>
+						<option value="Network monitoring"></option>
+						<option value="Hardware technician"></option>
+						<option value="C programmer"></option>
+						<option value="Penetration tester"></option>
+						<option value="Crypt department"></option>
+						<option value="LLM research"></option>
+						<option value="AI traning"></option>
+					</datalist>
+				</fieldset>
+				<button type="submit">Register</button>
+			</form>
+		</main>
+	</body>
+</html>
